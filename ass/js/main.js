@@ -1,20 +1,28 @@
 console.log("do i work")
-
+// user selections
+const nameEl = document.getElementById('name')
 const formEl = document.getElementById('form')
 const ageEl = document.getElementById('passAge')
-console.log(ageEl)
 const kMEl = document.getElementById('Kmselect')
-console.log(kMEl)
-const optEl = document.querySelector('option')
 const submEl = document.getElementById('Submitdata')
+//ticket card
+const nametckcard = document.getElementById('ticketname')
+const kmticket = docu.getElementById('ticketKM')
 const priceEl = document.getElementById('price')
+const discountCard = document.getElementById('discount')
 
+
+
+
+
+//generic immutable
 const tckprice = 0.21;
-const standardPrice = tckprice * kMEl.value
 
+//form the calculation
 formEl.addEventListener('submit', function (event) {
     event.preventDefault();
     const standardPrice = tckprice * kMEl.value
+
 
     //check in console if everything works as should
     console.log(ageEl.value)

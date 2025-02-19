@@ -9,6 +9,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <header>
+    <!-- generic nav bar-->
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark"">
         <div class=" container-fluid">
         <a class="navbar-brand text-danger" href="#">Buyticket NOW!</a>
@@ -52,13 +53,13 @@
 </header>
 
 <body class="bg-primary-subtle ">
-
+    <!-- container user imputs for ticket-->
     <div class="container border border-secondary p-3 rounded mt-5 text-center">
         <h1>Inserisci i tuoi dati</h1>
         <hr>
         <form id="form" class="mt-5 p-3">
 
-            <input id="text" class="border-secondary rounded" placeholder="Inserisci il tuo nome" required>
+            <input id="name" class="border-secondary rounded" placeholder="Inserisci il tuo nome" required>
 
             <select id="passAge" class=" mt-3 form-select border-secondary " aria-label="Default select example"
                 required>
@@ -75,17 +76,15 @@
         </form>
     </div>
 
-
+    <!--ticked card-->
     <div class="container p-5 mt-5 bg-dark border border-secondary rounded text-white">
-
-
         <div class="card text-center">
             <div class="card-header">
                 Your ticket
             </div>
             <div class="card-body">
-                <h5 class="card-title">Your name</h5>
-                <p class="card-text"> Your km</p>
+                <h5 id="ticketname" class="card-title">Your name</h5>
+                <p id="ticketKM" class="card-text"> Your km</p>
                 <p id="price">Price</p>
                 <p id="discount"> discount</p>
             </div>
