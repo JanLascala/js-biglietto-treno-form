@@ -1,19 +1,23 @@
 console.log("do i work")
 
-const AgeEl = document.getElementById('passAgerange')
-console.log(AgeEl)
+const formEl = document.getElementById('form')
+const ageEl = document.getElementById('passAge')
+console.log(ageEl)
 const kMEl = document.getElementById('Kmselect')
 console.log(kMEl)
+const optEl = document.querySelector('option')
 const submEl = document.getElementById('Submitdata')
 const priceEl = document.getElementById('price')
 
 const tckprice = 0.21;
+const standardPrice = tckprice * kMEl.value
 
-submEl.addEventListener('submit', function (e) {
-    e.defaultPrevented
-    console.log(AgeEl.value)
+formEl.addEventListener('submit', function (event) {
+    event.preventDefault();
+    console.log(ageEl.value)
     console.log(kMEl.value)
-    priceEl.innerText = AgeEl.value
+    console.log(standardPrice)
+
 })
 
 
