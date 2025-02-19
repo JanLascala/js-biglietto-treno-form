@@ -55,9 +55,10 @@
 
     <div class="container border border-secondary p-3 rounded mt-5 text-center">
         <h1>Inserisci i tuoi dati</h1>
+        <hr>
         <form id="form" class="mt-5 p-3">
 
-            <input id="text" class="border-secondary" placeholder="Inserisci il tuo nome" required>
+            <input id="text" class="border-secondary rounded" placeholder="Inserisci il tuo nome" required>
 
             <select id="passAge" class=" mt-3 form-select border-secondary " aria-label="Default select example"
                 required>
@@ -67,18 +68,32 @@
                 <option value="3">Senior (>65) </option>
             </select>
 
-            <input id="Kmselect" class="mt-3" type="number" placeholder="Numero di kilometri" required>
+            <input id="Kmselect" class="mt-3 rounded" type="number" placeholder="Numero di kilometri" required>
 
-            <input id="Submitdata" class="" type="submit">
+            <input id="Submitdata" class="rounded btn btn-primary" type="submit">
 
         </form>
     </div>
 
 
-    <div class="container p-3 mt-5 bg-dark border border-secondary rounded text-white">
-        <form id="Ticket" action="">
+    <div class="container p-5 mt-5 bg-dark border border-secondary rounded text-white">
 
-            <p id="price">Price</p>
+
+        <div class="card text-center">
+            <div class="card-header">
+                Your ticket
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Your name</h5>
+                <p class="card-text"> Your km</p>
+                <p id="price">Price</p>
+                <p id="discount"> discount</p>
+            </div>
+            <div class="card-footer text-body-secondary">
+                <p class="">Valid for 1 trip</p>
+            </div>
+        </div>
+
     </div>
 
 
