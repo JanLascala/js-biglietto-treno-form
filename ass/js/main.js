@@ -16,7 +16,9 @@ formEl.addEventListener('submit', function (event) {
     event.preventDefault();
     console.log(ageEl.value)
     console.log(kMEl.value)
+    const standardPrice = tckprice * kMEl.value
     console.log(standardPrice)
+    priceEl.innerText = standardPrice
 
 })
 
