@@ -15,12 +15,13 @@ const standardPrice = tckprice * kMEl.value
 formEl.addEventListener('submit', function (event) {
     event.preventDefault();
     const standardPrice = tckprice * kMEl.value
+
     //check in console if everything works as should
     console.log(ageEl.value)
     console.log(kMEl.value)
     console.log(standardPrice)
 
-    if (ageEl.value = 1) {
+    if (ageEl.value === "1") {
 
         const minorDiscount = (80 * standardPrice) / 100;
         const minordecimal = minorDiscount.toFixed(2)
@@ -28,7 +29,7 @@ formEl.addEventListener('submit', function (event) {
 
 
 
-    } else if (ageEl.value = 3) {
+    } else if (ageEl.value === "3") {
 
         const seniorDiscount = (60 * standardPrice) / 100
         const seniordecimal = seniorDiscount.toFixed(2)
@@ -36,7 +37,7 @@ formEl.addEventListener('submit', function (event) {
 
 
 
-    } else if (ageEl.value = 2) {
+    } else if (ageEl.value === "2") {
         priceEl.innerText = standardPrice
 
 
